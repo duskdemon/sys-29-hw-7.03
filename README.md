@@ -138,3 +138,17 @@ output "external_ip_address_vm_1" {
 Провести тестирование. 
 
 ---
+
+## Решение
+
+1. Установлен terraform, проведена инициализация командой **terraform init**
+![Инициализация](https://github.com/duskdemon/sys-29-hw-7.03/blob/main/img/7-03-tfyc-init.png)
+2. Написан код для развертывания инфраструктуры в виде машины в Яндекс облаке **vm-1**, запущен **terraform plan**
+![План](https://github.com/duskdemon/sys-29-hw-7.03/blob/main/img/7-03-tfyc-plan.png)
+3. Запущена команда на исполнение, разворачивание инфраструктуры посредством команды **terraform apply**
+![Разворачивание](https://github.com/duskdemon/sys-29-hw-7.03/blob/main/img/7-03-tfyc-apply.png)
+4. Развернута машина на Яндекс облаке
+![Результат](https://github.com/duskdemon/sys-29-hw-7.03/blob/main/img/7-03-tfyc-vm.png)
+5. Подготовлены настройки, конфигурирование через **Ansible**, целевое состояние - рабочий веб-сервер на Яндекс облаке
+![Плейбук](https://github.com/duskdemon/sys-29-hw-7.03/blob/main/img/7-03-anyc-res.png)
+
